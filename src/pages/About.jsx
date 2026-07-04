@@ -120,14 +120,7 @@ export function About() {
             ))}
           </StaggerReveal>
         </Container>
-        {/* Full-width environment photo below the cards */}
-        <div className="mt-10 w-full overflow-hidden">
-          <img
-            src="/images/workingEnviroment.png"
-            alt="Working Environment"
-            className="w-full object-cover"
-          />
-        </div>
+
       </Section>
     </>
   )
