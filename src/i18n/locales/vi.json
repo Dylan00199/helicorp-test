@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "titleSuffix": "HELICORP — Công ty Cổ phần Cuộc Sống Mạnh Khỏe"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "introduction": "Giới thiệu",
+    "about": "Về HELICORP",
+    "history": "Lịch sử phát triển",
+    "culture": "Văn hóa doanh nghiệp",
+    "ecommerce": "Thương mại điện tử",
+    "brands": "Danh sách thương hiệu",
+    "forAgents": "Dành cho đại lý",
+    "forSuppliers": "Dành cho nhà cung cấp",
+    "careers": "Tuyển dụng",
+    "news": "Tin tức",
+    "contact": "Liên hệ",
+    "contactAgent": "Trở thành đại lý",
+    "contactSupplier": "Trở thành nhà cung cấp",
+    "languageLabel": "Ngôn ngữ"
+  },
+  "common": {
+    "skipToContent": "Chuyển đến nội dung chính",
+    "learnMore": "Tìm hiểu thêm",
+    "exploreMore": "Khám phá thêm",
+    "viewAll": "Xem tất cả",
+    "readMore": "Đọc thêm",
+    "viewDetails": "Xem chi tiết",
+    "contactTeam": "Liên hệ đội ngũ chuyên gia",
+    "imagePlaceholder": "Vị trí hình ảnh",
+    "imagePlaceholderNote": "Sẽ thay bằng hình ảnh thật",
+    "modelPlaceholder": "Vị trí mô hình 3D",
+    "logoPlaceholder": "Logo đang cập nhật",
+    "back": "Quay lại",
+    "backHome": "Về trang chủ",
+    "name": "Họ và tên",
+    "phone": "Số điện thoại",
+    "email": "Địa chỉ email",
+    "company": "Công ty",
+    "jobTitle": "Chức danh",
+    "productCategory": "Ngành hàng sản phẩm",
+    "message": "Nội dung",
+    "send": "Gửi",
+    "sending": "Đang gửi…",
+    "required": "Bắt buộc",
+    "errorRequired": "Vui lòng điền thông tin này.",
+    "errorEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+    "errorPhone": "Vui lòng nhập số điện thoại hợp lệ.",
+    "formSuccessTitle": "Đã gửi thành công",
+    "formSuccess": "Cảm ơn bạn — chúng tôi đã nhận được thông tin và sẽ liên hệ lại sớm nhất.",
+    "formErrorTitle": "Đã xảy ra lỗi",
+    "formError": "Chúng tôi chưa thể gửi yêu cầu này. Vui lòng thử lại hoặc liên hệ trực tiếp qua điện thoại/email.",
+    "optional": "không bắt buộc"
+  },
+  "footer": {
+    "tagline": "HEALTHY LIVING CORPORATION",
+    "support": "Hỗ trợ",
+    "purchaseConsultation": "Tư vấn mua hàng",
+    "warrantyCenter": "Trung tâm bảo hành",
+    "workingHours": "Giờ làm việc",
+    "workingHoursValue": "8:30 – 18:00 (GMT+7)",
+    "branch": "Chi nhánh",
+    "hqLabel": "Trụ sở chính TP. Hồ Chí Minh",
+    "warehouseLabel": "Kho bãi cát vệ sinh HELIPET",
+    "storeHcmcLabel": "HELIPET Đinh Tiên Hoàng (TP.HCM)",
+    "storeHanoiLabel": "HELIPET Thụy Khuê (Hà Nội)",
+    "corporateWebsites": "Website thương hiệu",
+    "rights": "© {{year}} Công ty Cổ phần Cuộc Sống Mạnh Khỏe (HELICORP). Bảo lưu mọi quyền."
+  },
+  "home": {
+    "heroEyebrow": "Đối tác phát triển thị trường tại Việt Nam",
+    "heroTitle": "Phát triển các thương hiệu vì sức khỏe trên khắp Việt Nam",
+    "heroSubtitle": "Công ty Cổ phần Cuộc Sống Mạnh Khỏe",
+    "heroBody": "HELICORP xây dựng bộ máy phát triển thị trường cho các thương hiệu chăm sóc thú cưng khi bước vào Việt Nam: phân phối toàn quốc, vận hành thương mại điện tử và hậu mãi, trong cùng một đối tác.",
+    "heroCtaPrimary": "Khám phá dịch vụ",
+    "heroCtaSecondary": "Trở thành đối tác",
+    "servicesEyebrow": "Dịch vụ cốt lõi",
+    "servicesTitle": "Một đối tác, mọi kênh bán hàng",
+    "servicesBody": "Từ khi sản phẩm lên kệ lần đầu cho đến giao hàng chặng cuối, đội ngũ của chúng tôi vận hành những phần quan trọng nhất để đưa thương hiệu đến với người nuôi thú cưng Việt Nam.",
+    "services": [
+      { "title": "Kinh doanh & Tiếp thị", "items": ["Giải pháp kênh phân phối", "Triển khai bán hàng tại điểm bán", "Chiến lược thương hiệu"] },
+      { "title": "Vận hành Thương mại điện tử", "items": ["Quản lý gian hàng đa nền tảng", "Vận hành & hậu mãi thương mại điện tử", "Hệ thống website B2C & thương hiệu"] },
+      { "title": "Kênh B2B & Bán lẻ", "items": ["Quản lý khách hàng trọng điểm", "Phát triển mạng lưới đại lý chiến lược", "Hệ thống petshop & cat café"] },
+      { "title": "Hậu mãi & Trải nghiệm khách hàng", "items": ["Chiến lược dịch vụ xuyên suốt", "Hệ thống & quy trình bảo hành chuyên nghiệp", "Tự động hóa dịch vụ khách hàng"] },
+      { "title": "Kích hoạt Marketing", "items": ["Hợp tác cùng KOC/KOL & người nổi tiếng", "Tổ chức sự kiện offline", "Tối ưu hóa quy trình"] },
+      { "title": "Xây dựng Thương hiệu", "items": ["Phát triển thương hiệu", "Truyền thông & quảng bá", "Xây dựng hình ảnh thương hiệu"] }
+    ],
+    "industriesEyebrow": "Ngành hàng",
+    "industriesTitle": "Chuyên sâu về công nghệ chăm sóc thú cưng",
+    "industries": [
+      { "title": "Công nghệ thú cưng", "body": "Sản phẩm thông minh, tự động hóa từ những thương hiệu dẫn đầu như PETKIT, mang lại sự tiện lợi kết nối cho thú cưng và chủ nuôi." },
+      { "title": "Sức khỏe & Dinh dưỡng thú cưng", "body": "Dòng sản phẩm sức khỏe và dinh dưỡng chuyên biệt, bao gồm Dr.Vet, tập trung vào sức khỏe lâu dài." },
+      { "title": "Nội thất cho thú cưng", "body": "Cây leo cho mèo, giường nằm và nội thất sinh hoạt được thiết kế vừa tiện nghi vừa thẩm mỹ." },
+      { "title": "Phụ kiện & Phong cách sống", "body": "Thời trang, đồ chơi và phụ kiện hằng ngày cho phong cách sống hiện đại của người nuôi thú cưng." }
+    ],
+    "strengthsEyebrow": "Thế mạnh",
+    "strengthsTitle": "Vì sao các thương hiệu chọn HELICORP",
+    "strengths": [
+      { "title": "Dẫn đầu thị trường", "body": "80% thị phần thương mại điện tử ngành hàng thú cưng thông minh." },
+      { "title": "Vận hành xuất sắc", "body": "Năng lực vượt trội về thương mại điện tử và hậu mãi." },
+      { "title": "Niềm tin khách hàng", "body": "Lợi thế cạnh tranh xây dựng từ dịch vụ và sự nhất quán." },
+      { "title": "Hệ thống đa kênh", "body": "Chuyên môn sâu trên cả kênh online, offline và B2B." },
+      { "title": "Quy trình bài bản", "body": "Quy trình rõ ràng cho bán hàng, thương mại điện tử và hậu mãi." },
+      { "title": "Mạng lưới người ảnh hưởng", "body": "Hợp tác chiến lược với các KOC, KOL hàng đầu." }
+    ],
+    "partnersEyebrow": "Đối tác",
+    "partnersTitle": "Những thương hiệu chúng tôi phát triển tại Việt Nam",
+    "partnersNote": "Vị trí logo tạm thời — sẽ cập nhật hình ảnh chính thức.",
+    "finalCtaTitle": "Sẵn sàng phát triển tại Việt Nam?",
+    "finalCtaBody": "Chia sẻ với chúng tôi về thương hiệu hoặc doanh nghiệp của bạn, chúng tôi sẽ cho bạn thấy mạng lưới của mình có thể hỗ trợ như thế nào.",
+    "finalCtaPrimary": "Trở thành đại lý",
+    "finalCtaSecondary": "Trở thành nhà cung cấp"
+  },
+  "about": {
+    "eyebrow": "Về HELICORP",
+    "title": "Đối tác kiên định và linh hoạt cho các thương hiệu chăm sóc thú cưng",
+    "intro": "HELICORP (viết tắt của Healthy Living Corporation) là một trong những doanh nghiệp dẫn đầu ngành công nghệ chăm sóc thú cưng tại Việt Nam. Chúng tôi chọn chăm sóc thú cưng là chương đầu tiên trong một sứ mệnh lớn hơn: giúp mọi người sống khỏe mạnh hơn, từ từng hộ gia đình. HELICORP không chỉ là một công ty, mà là một tư duy kinh doanh — kiên định, linh hoạt và luôn hướng đến giai đoạn phát triển tiếp theo.",
+    "stats": [
+      { "value": "80%", "label": "Thị phần thương mại điện tử" },
+      { "value": "15+", "label": "Cửa hàng online" },
+      { "value": "45+", "label": "Nhân sự" }
+    ],
+    "valuesEyebrow": "Giá trị cốt lõi",
+    "valuesTitle": "Những điều chúng tôi luôn giữ vững",
+    "values": [
+      { "title": "Chính trực", "body": "Báo cáo minh bạch, trung thực. Chúng tôi nhận trách nhiệm với sai sót và cùng nhau giải quyết vấn đề một cách công khai." },
+      { "title": "Chuyên nghiệp", "body": "Tiêu chuẩn cao và không ngừng học hỏi, để đối tác và khách hàng luôn nhận được kết quả nhất quán." },
+      { "title": "Đồng hành", "body": "Chúng tôi xây dựng mối quan hệ dựa trên niềm tin, cùng đối tác và nhân viên đi qua cả khó khăn lẫn thành công." },
+      { "title": "Đổi mới", "body": "Chúng tôi luôn tìm cách giải quyết vấn đề tốt hơn để bắt kịp một thị trường thay đổi nhanh chóng." },
+      { "title": "Tận tâm", "body": "Cam kết trọn vẹn với từng dự án, với nỗ lực vượt cả mong đợi." }
+    ],
+    "visionTitle": "Tầm nhìn",
+    "visionBody": "Dẫn đầu thị trường Việt Nam bằng việc tiên phong trong công nghệ chăm sóc thú cưng, thiết lập chuẩn mực mà các đơn vị khác lấy làm thước đo.",
+    "missionTitle": "Sứ mệnh",
+    "missionBody": "Mang đến các giải pháp dựa trên công nghệ giúp nâng cao chất lượng cuộc sống và niềm hạnh phúc cho cả gia đình lẫn thú cưng.",
+    "strategyTitle": "Chiến lược",
+    "strategyBody": "Chiến lược của HELICORP phản ánh đúng tên gọi: kiên định và linh hoạt như một chiếc trực thăng — chủ động tiến vào những thị trường ngách đầy thử thách, nhanh chóng điều chỉnh hướng đi, và luôn hướng đến những tầm cao mới.",
+    "omnichannelTitle": "Hệ thống phân phối đa kênh",
+    "omnichannelIntro": "Ba kênh phân phối, một trải nghiệm liền mạch cho khách hàng.",
+    "channelOffline": {
+      "title": "Kênh Offline",
+      "body": "Các cửa hàng flagship — gồm HELIPET Đinh Tiên Hoàng (TP.HCM) và HELIPET Thụy Khuê (Hà Nội) — cùng sự hiện diện tại các đối tác bán lẻ lớn như AEON Mall và Lotte Mart."
+    },
+    "channelOnline": {
+      "title": "Kênh Online",
+      "body": "Hơn 15 gian hàng chính thức trên các sàn thương mại điện tử lớn nhất Việt Nam, gồm Shopee, TikTok Shop và Lazada."
+    },
+    "channelB2B": {
+      "title": "Kênh Đối tác B2B",
+      "body": "Mạng lưới đại lý với hơn 10 điểm bán, tập trung vào petshop và cat café có cùng tệp khách hàng mục tiêu."
+    },
+    "facilitiesTitle": "Cơ sở vật chất & Vận hành",
+    "facilitiesIntro": "Hạ tầng vận hành phía sau thương hiệu: văn phòng, kho bãi và không gian bán lẻ tại TP.HCM và Hà Nội, được vận hành theo bốn trụ cột.",
+    "facilitiesPillars": [
+      { "title": "Vận hành tự động hóa", "body": "Tự động hóa quy trình trong kho bãi và xử lý đơn hàng." },
+      { "title": "Dẫn đầu thị trường", "body": "Thị phần dẫn đầu trong ngành hàng chăm sóc thú cưng thông minh." },
+      { "title": "Trải nghiệm khách hàng", "body": "Tiêu chuẩn dịch vụ được xây dựng để giữ chân khách hàng." },
+      { "title": "Bảo vệ thương hiệu", "body": "Bảo vệ thương hiệu đối tác tại mọi điểm chạm." }
+    ],
+    "galleryNote": "Vị trí hình ảnh cơ sở vật chất — sẽ cập nhật hình ảnh thật từ văn phòng, kho bãi và showroom."
+  },
+  "history": {
+    "eyebrow": "Lịch sử phát triển",
+    "title": "Hành trình của chúng tôi",
+    "intro": "Từ cuộc trò chuyện đầu tiên với một thương hiệu đến một mạng lưới phân phối toàn quốc — những cột mốc đã định hình HELICORP.",
+    "milestones": [
+      { "year": "2021", "title": "Khởi đầu", "items": ["Bắt đầu đàm phán với PETKIT về việc phát triển thương hiệu tại Việt Nam."] },
+      { "year": "2022", "title": "Thành lập", "items": ["Đạt thỏa thuận phát triển thương hiệu PETKIT tại Việt Nam.", "Thành lập HeLiPet, HeLiCorp và Max Clean (24/6/2022)."] },
+      { "year": "2023", "title": "Hợp tác chiến lược & Mở rộng bán lẻ", "items": ["Đẩy mạnh hợp tác toàn diện với PETKIT tại Việt Nam.", "Ký kết hợp tác độc quyền với Petree dưới thương hiệu HeLiPet.", "Sản phẩm HeLiCorp lên kệ tại hệ thống siêu thị AEON."] },
+      { "year": "2024", "title": "Tăng trưởng mạnh mẽ & Đa dạng hóa", "items": ["Ký kết hợp tác phân phối độc quyền sản phẩm Dr.Vet.", "Đạt thỏa thuận độc quyền với thương hiệu Neakasa tại Việt Nam.", "Xúc tiến hợp tác với đối tác tại thị trường Campuchia.", "Sản phẩm HeLiCorp lên kệ tại hệ thống LotteMart.", "Thành lập chi nhánh tại Hà Nội."] },
+      { "year": "2025", "title": "Đổi mới sản phẩm độc quyền", "items": ["Hợp tác độc quyền cùng Petree phát triển thùng vệ sinh thế hệ mới HELIPET OPEN TOP.", "Khai trương showroom HeLiPet đầu tiên tại Quận 1, TP.HCM — cửa hàng đầu tiên trong chuỗi bán lẻ sản phẩm công nghệ cao cho thú cưng."] }
+    ]
+  },
+  "culture": {
+    "eyebrow": "Văn hóa doanh nghiệp",
+    "title": "Điều làm nên sự khác biệt của HELICORP",
+    "intro": "Một nền văn hóa làm việc được xây dựng qua nhiều năm, xoay quanh một đội ngũ tận tâm và những giá trị chung.",
+    "pillarsEyebrow": "Triết lý cốt lõi",
+    "pillars": [
+      { "title": "Trưởng thành & Đam mê", "body": "Mỗi ngày là một cơ hội để học hỏi, sáng tạo và làm việc bằng nhiệt huyết thật sự — những cá nhân xuất sắc cùng nhau tạo nên điều phi thường." },
+      { "title": "Nâng cao kỹ năng", "body": "Đầu tư liên tục vào chuyên môn kỹ thuật, cùng một văn hóa học hỏi được xây dựng bởi những người thật sự quan tâm đến thú cưng và công việc của mình." },
+      { "title": "Gắn kết đội ngũ", "body": "Một hành trình phát triển chung, được củng cố qua các hoạt động team building và chia sẻ kiến thức thường xuyên." },
+      { "title": "Phát triển nhân tài", "body": "Chủ động xây dựng nguồn nhân lực chất lượng — tìm kiếm, thu hút và đào tạo những người có tinh thần khởi nghiệp." }
+    ],
+    "workingEnvTitle": "Môi trường làm việc",
+    "workingEnvBody": "Một nơi làm việc hiện đại, thân thiện với đầy đủ tiện ích và không gian xanh — năng động, cởi mở và được thiết kế để mọi người luôn muốn quay trở lại.",
+    "trainingTitle": "Đào tạo & Phát triển",
+    "trainingBody": "Con người là đòn bẩy lớn nhất cho sự phát triển của công ty, vì vậy HELICORP luôn tổ chức các khóa đào tạo nội bộ và hỗ trợ nhân viên tham gia các khóa học bên ngoài để nâng cao chuyên môn.",
+    "galleryNote": "Vị trí hình ảnh đội ngũ & nơi làm việc."
+  },
+  "brands": {
+    "eyebrow": "Danh sách thương hiệu",
+    "title": "Những thương hiệu chúng tôi xây dựng và phân phối",
+    "intro": "Danh mục gồm các hợp đồng phân phối độc quyền quốc tế cùng những thương hiệu do chính chúng tôi xây dựng.",
+    "partnersTitle": "Thương hiệu quốc tế chúng tôi phân phối",
+    "partners": [
+      { "name": "PETKIT", "body": "Công nghệ thông minh cho thú cưng — mối hợp tác phân phối chủ lực của HELICORP." },
+      { "name": "Dr.VET", "body": "Chăm sóc sức khỏe và dinh dưỡng chuyên biệt cho thú cưng." },
+      { "name": "PETREE", "body": "Đối tác phát triển sản phẩm độc quyền, gồm thùng vệ sinh HELIPET OPEN TOP." },
+      { "name": "NEAKASA", "body": "Công nghệ vệ sinh thông minh cho hộ gia đình có thú cưng." }
+    ],
+    "inhouseTitle": "Thương hiệu nội bộ",
+    "inhouse": [
+      { "name": "HELIPET", "body": "Thương hiệu sản phẩm và bán lẻ riêng của HELICORP, cùng các showroom flagship tại TP.HCM và Hà Nội." },
+      { "name": "Max Clean", "body": "Sản phẩm vệ sinh và chăm sóc do chúng tôi tự phát triển." }
+    ],
+    "ctaAgentTitle": "Muốn kinh doanh những thương hiệu này?",
+    "ctaAgentBody": "Tham gia mạng lưới đại lý của chúng tôi và đưa các sản phẩm này đến với khách hàng.",
+    "ctaSupplierTitle": "Bạn đang sở hữu một thương hiệu riêng?",
+    "ctaSupplierBody": "Hợp tác cùng chúng tôi với vai trò nhà cung cấp và để mạng lưới phân phối của chúng tôi đưa sản phẩm ra thị trường."
+  },
+  "forAgents": {
+    "eyebrow": "Dành cho đại lý",
+    "title": "Trở thành đối tác cùng HELICORP",
+    "intro": "Mở rộng phạm vi kinh doanh và tạo ra giá trị đột phá trong ngành công nghệ chăm sóc thú cưng cùng nhà phân phối hàng đầu Việt Nam. Với mô hình kinh doanh đã được kiểm chứng và mạng lưới phân phối rộng khắp, chúng tôi đang tìm kiếm những đối tác cùng nhau phát triển thị trường.",
+    "whyTitle": "Vì sao nên hợp tác cùng HELICORP?",
+    "why": [
+      "Nhà phân phối độc quyền chính thức của PETKIT, NEAKASA, PETREE và Dr.VET tại Việt Nam.",
+      "Sở hữu các thương hiệu riêng gồm HELIPET và Max Clean.",
+      "Đưa PETKIT đạt 80% thị phần thương mại điện tử ngành hàng chăm sóc thú cưng thông minh."
+    ],
+    "opsTitle": "Vận hành & hậu cần chuyên nghiệp",
+    "opsBody": "Hệ thống quy trình bài bản cho bán hàng, thương mại điện tử, hậu mãi và marketing, cùng dịch vụ xuất nhập khẩu, thông quan, kho bãi và giao nhận giúp sản phẩm đến tay khách hàng nhanh chóng.",
+    "distributionTitle": "Hệ thống phân phối đa kênh toàn diện",
+    "channelOnlineTitle": "Kênh Online",
+    "channelOnlineBody": "Hơn 15 gian hàng chính thức trên Shopee, TikTok Shop và Lazada, cùng các website thương mại điện tử riêng cho từng thương hiệu.",
+    "channelOfflineTitle": "Kênh Offline",
+    "channelOfflineBody": "Hiện diện tại các khách hàng trọng điểm như AEON Mall và Lotte Mart, cùng hệ thống cửa hàng flagship trải nghiệm sản phẩm trực tiếp.",
+    "channelB2BTitle": "Kênh Đối tác B2B",
+    "channelB2BBody": "Hơn 10 điểm bán qua mạng lưới đại lý chiến lược, tập trung vào petshop và cat café.",
+    "mapEyebrow": "Vận hành xuất sắc",
+    "mapTitle": "Một mạng lưới, phủ khắp cả nước",
+    "mapBody": "Mạng lưới phân phối trải rộng khắp 34 tỉnh, thành phố của Việt Nam, với hai trung tâm trọng điểm tại TP.HCM và Hà Nội.",
+    "excellenceTitle": "Vận hành xuất sắc & Hậu mãi vượt trội",
+    "excellenceItems": [
+      "Chiến lược dịch vụ xuyên suốt trước, trong và sau bán hàng, hoàn thiện dựa trên các mô hình bán lẻ hàng đầu.",
+      "Quy trình rõ ràng, nhất quán cho bán hàng, thương mại điện tử, hậu mãi và marketing."
+    ],
+    "ctaEyebrow": "Cất Cánh Cùng HELICORP",
+    "ctaTitle": "Sẵn sàng trở thành một phần của hệ sinh thái đang tăng trưởng nhanh?",
+    "ctaBody": "Kết nối với chúng tôi để khám phá cơ hội hợp tác và cùng nhau xây dựng thành công bền vững trong ngành công nghệ chăm sóc thú cưng tại Việt Nam.",
+    "ctaButton": "Cất cánh"
+  },
+  "forSuppliers": {
+    "eyebrow": "Dành cho nhà cung cấp",
+    "title": "Trở thành nhà cung cấp của HELICORP",
+    "intro": "Chúng tôi đang tìm kiếm những thương hiệu uy tín để cùng xây dựng một tương lai bền vững, mang công nghệ chăm sóc thú cưng mới đến Việt Nam. Hơn một thập kỷ dẫn đầu ngành hàng là nền tảng cho cam kết hợp tác lâu dài của chúng tôi.",
+    "sections": [
+      { "title": "Tối ưu hóa chuỗi cung ứng thông minh", "body": "Dịch vụ phân phối dựa trên hệ thống đa kênh đã được kiểm chứng, với vận chuyển, lưu kho và bảo hiểm hàng hóa được chúng tôi đảm nhận, linh hoạt theo chiến lược phát triển thị trường của từng thương hiệu." },
+      { "title": "Mở rộng thị trường & Tiếp cận vượt trội", "body": "Nhà phân phối độc quyền chính thức của PETKIT, NEAKASA, PETREE và Dr.VET, cùng các thương hiệu nội bộ HELIPET và Max Clean — cùng công thức đã đưa PETKIT đạt 80% thị phần thương mại điện tử, nay sẵn sàng áp dụng cho thương hiệu của bạn trên cả kênh online, offline và B2B." },
+      { "title": "Mô hình kinh doanh hiệu quả", "body": "Mô hình thương mại linh hoạt, phù hợp với danh mục sản phẩm và kênh phân phối của bạn, được xây dựng để tối đa hóa tăng trưởng và hiệu quả." },
+      { "title": "Hợp tác phát triển & Nâng cao chất lượng", "body": "Chia sẻ kiến thức và công nghệ để nâng cao chất lượng sản phẩm, dịch vụ, cùng các khóa đào tạo thường xuyên về kỹ năng sản xuất, quản lý chất lượng và tiêu chuẩn kỹ thuật." },
+      { "title": "Hợp tác chiến lược & Lâu dài", "body": "Một đối tác chuyên nghiệp, uy tín trong ngành công nghệ chăm sóc thú cưng, cùng hướng đến thành công bền vững và định hình tương lai ngành." }
+    ],
+    "logisticsTitle": "Dịch vụ hậu cần toàn diện",
+    "logistics": [
+      { "title": "Xuất nhập khẩu chiến lược", "body": "Thông quan, chứng nhận hợp quy, giao nhận và giấy phép nhập khẩu được xử lý trọn gói." },
+      { "title": "Quản lý kho bãi hiện đại", "body": "Lưu trữ và quản lý hàng hóa an toàn, chuyên nghiệp." },
+      { "title": "Giao hàng linh hoạt & hiệu quả", "body": "Giao hàng toàn quốc, phối hợp cùng các đơn vị vận chuyển uy tín trong và ngoài nước." },
+      { "title": "Mạng lưới dịch vụ & hỗ trợ", "body": "Dịch vụ bảo hành ủy quyền — đổi trả, sửa chữa, hỗ trợ tại chỗ, lắp đặt và bảo trì." }
+    ],
+    "stats": [
+      { "value": "1000+", "label": "Dự án" },
+      { "value": "400+", "label": "Sản phẩm" },
+      { "value": "70+", "label": "Hoạt động" },
+      { "value": "20+", "label": "Chuỗi cửa hàng" }
+    ],
+    "ctaEyebrow": "Sẵn Sàng Vươn Xa Cùng HELICORP?",
+    "ctaTitle": "Đưa sản phẩm của bạn đến thị trường chăm sóc thú cưng Việt Nam",
+    "ctaBody": "Trở thành một phần của mạng lưới nhà cung cấp tiên phong, cùng HELICORP đưa sản phẩm đến gần hơn với người nuôi thú cưng Việt Nam.",
+    "ctaButton": "Vươn xa"
+  },
+  "careers": {
+    "eyebrow": "Tuyển dụng",
+    "title": "Xây dựng sự nghiệp cùng HELICORP",
+    "intro": "\"Trưởng thành & Đam mê\" không chỉ là khẩu hiệu — đó là cách đội ngũ của chúng tôi thực sự vận hành. Nếu điều đó nghe giống nơi bạn muốn gắn bó, hãy xem những vị trí đang tuyển.",
+    "openRolesTitle": "Vị trí đang tuyển",
+    "location": "Địa điểm",
+    "experience": "Kinh nghiệm",
+    "noExperienceRequired": "Không yêu cầu kinh nghiệm",
+    "generalCtaTitle": "Chưa tìm thấy vị trí phù hợp?",
+    "generalCtaBody": "Chúng tôi đang phát triển nhanh và luôn chào đón những người có tinh thần cầu tiến. Hãy gửi CV và cho chúng tôi biết bạn có thể đóng góp ở đâu.",
+    "generalCtaButton": "Gửi CV của bạn"
+  },
+  "news": {
+    "eyebrow": "Tin tức",
+    "title": "Những điều đang diễn ra tại HELICORP",
+    "intro": "Cập nhật về hợp tác, sản phẩm và đội ngũ.",
+    "sampleBadge": "Nội dung minh họa"
+  },
+  "contactAgent": {
+    "eyebrow": "Liên hệ",
+    "title": "Đăng ký trở thành đại lý",
+    "intro": "Để lại thông tin bên dưới, đội ngũ của chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.",
+    "infoTitle": "Thông tin liên hệ HELICORP",
+    "sideNoteTitle": "Trở thành đối tác B2B",
+    "sideNoteBody": "HELICORP đang tích cực tìm kiếm các đối tác chiến lược để mở rộng hệ sinh thái và củng cố vị thế trong ngành công nghệ chăm sóc thú cưng thông minh. Petshop, cat café và các đại lý khác đều có thể hợp tác để đưa PETKIT cùng các thương hiệu khác đến với khách hàng của mình."
+  },
+  "contactSupplier": {
+    "eyebrow": "Liên hệ",
+    "title": "Đăng ký trở thành nhà cung cấp",
+    "intro": "Chia sẻ với chúng tôi về thương hiệu và sản phẩm của bạn, đội ngũ của chúng tôi sẽ phản hồi trong thời gian sớm nhất.",
+    "infoTitle": "Hợp tác Nhà cung cấp & Đổi mới",
+    "sideNoteTitle": "Cùng nhau xây dựng thương hiệu dẫn đầu tiếp theo",
+    "sideNoteBody": "Nếu bạn có một sản phẩm chăm sóc thú cưng đã sẵn sàng cho thị trường Việt Nam — hoặc một ý tưởng cho sản phẩm đó — chúng tôi rất muốn lắng nghe. Đội ngũ của chúng tôi sẽ đánh giá mức độ phù hợp về phân phối, hậu cần và chiến lược thương hiệu trước khi trao đổi thêm về điều khoản hợp tác."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Không tìm thấy trang",
+    "body": "Trang bạn đang tìm không tồn tại hoặc có thể đã được di chuyển.",
+    "cta": "Về trang chủ"
+  }
+}

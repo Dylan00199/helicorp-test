@@ -1,0 +1,394 @@
+{
+  "meta": {
+    "titleSuffix": "HELICORP — Healthy Living Corporation"
+  },
+  "nav": {
+    "home": "Home",
+    "introduction": "Introduction",
+    "about": "About HELICORP",
+    "history": "Development History",
+    "culture": "Corporate Culture",
+    "ecommerce": "Ecommerce",
+    "brands": "Brand List",
+    "forAgents": "For Agents",
+    "forSuppliers": "For Suppliers",
+    "careers": "Careers",
+    "news": "News",
+    "contact": "Contact",
+    "contactAgent": "Become an Agent",
+    "contactSupplier": "Become a Supplier",
+    "languageLabel": "Language"
+  },
+  "common": {
+    "skipToContent": "Skip to main content",
+    "learnMore": "Learn more",
+    "exploreMore": "Explore more",
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "viewDetails": "View details",
+    "contactTeam": "Contact our expert team",
+    "imagePlaceholder": "Image placeholder",
+    "imagePlaceholderNote": "Swap for a real asset",
+    "modelPlaceholder": "3D model placeholder",
+    "logoPlaceholder": "Logo pending",
+    "back": "Back",
+    "backHome": "Back to home",
+    "name": "Full name",
+    "phone": "Phone number",
+    "email": "Email address",
+    "company": "Company",
+    "jobTitle": "Job title",
+    "productCategory": "Product category",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending…",
+    "required": "Required",
+    "errorRequired": "This field is required.",
+    "errorEmail": "Enter a valid email address.",
+    "errorPhone": "Enter a valid phone number.",
+    "formSuccessTitle": "Message sent",
+    "formSuccess": "Thanks — we've received your details and will be in touch shortly.",
+    "formErrorTitle": "Something went wrong",
+    "formError": "We couldn't send that just now. Please try again or reach us directly by phone or email.",
+    "optional": "optional"
+  },
+  "footer": {
+    "tagline": "HEALTHY LIVING CORPORATION",
+    "support": "Support",
+    "purchaseConsultation": "Purchase consultation",
+    "warrantyCenter": "Warranty center",
+    "workingHours": "Working hours",
+    "workingHoursValue": "8:30 AM – 6:00 PM (GMT+7)",
+    "branch": "Branches",
+    "hqLabel": "Ho Chi Minh City Headquarters",
+    "warehouseLabel": "HELIPET Cat Litter Warehouse",
+    "storeHcmcLabel": "HELIPET Dinh Tien Hoang (HCMC)",
+    "storeHanoiLabel": "HELIPET Thuy Khue (Hanoi)",
+    "corporateWebsites": "Corporate websites",
+    "rights": "© {{year}} Healthy Living Corporation. All rights reserved."
+  },
+  "home": {
+    "heroEyebrow": "Market development partner in Vietnam",
+    "heroTitle": "Growing healthy brands across Vietnam",
+    "heroSubtitle": "Healthy Living Corporation",
+    "heroBody": "HELICORP builds the go-to-market engine for pet care brands entering Vietnam: nationwide distribution, e-commerce operations and after-sales, under one roof.",
+    "heroCtaPrimary": "Explore our services",
+    "heroCtaSecondary": "Become a partner",
+    "servicesEyebrow": "Core Services",
+    "servicesTitle": "One partner, every channel",
+    "servicesBody": "From first shelf placement to last-mile delivery, our teams run the parts of the business that get a brand in front of Vietnamese pet owners.",
+    "services": [
+      {
+        "title": "Sales & Marketing",
+        "items": ["Distribution channel solutions", "Trade execution", "Brand strategy"]
+      },
+      {
+        "title": "E-commerce Excellence",
+        "items": ["Multi-platform storefront management", "E-commerce operations & after-sales", "B2C & brand website systems"]
+      },
+      {
+        "title": "B2B & Retail Channel",
+        "items": ["Key account management", "Strategic dealer network development", "Petshop & cat café systems"]
+      },
+      {
+        "title": "After-Sales & CX",
+        "items": ["End-to-end service strategy", "Professional warranty systems & process", "Customer service automation"]
+      },
+      {
+        "title": "Marketing Activation",
+        "items": ["KOC/KOL & celebrity partnerships", "Offline event organization", "Process optimization"]
+      },
+      {
+        "title": "Brand Building",
+        "items": ["Brand development", "Communications & promotion", "Brand image building"]
+      }
+    ],
+    "industriesEyebrow": "Industries",
+    "industriesTitle": "Built around pet care technology",
+    "industries": [
+      {
+        "title": "Pet Technology",
+        "body": "Smart, automated products from category leaders like PETKIT, bringing connected convenience to pets and their owners."
+      },
+      {
+        "title": "Pet Health & Nutrition",
+        "body": "Specialized health and nutrition lines, including our Dr.Vet range, focused on long-term wellbeing."
+      },
+      {
+        "title": "Pet Furniture",
+        "body": "Cat trees, beds and living furniture designed for comfort as much as style."
+      },
+      {
+        "title": "Pet Accessories & Lifestyle",
+        "body": "Fashion, toys and everyday accessories for the modern pet-parent lifestyle."
+      }
+    ],
+    "strengthsEyebrow": "Strengths",
+    "strengthsTitle": "Why brands choose HELICORP",
+    "strengths": [
+      { "title": "Market Leader", "body": "80% e-commerce market share in the smart pet segment." },
+      { "title": "Operational Excellence", "body": "Superior e-commerce and after-sales capability." },
+      { "title": "Customer Trust", "body": "A competitive edge built on service and consistency." },
+      { "title": "Omnichannel System", "body": "Deep expertise across online, offline and B2B." },
+      { "title": "Systematic Processes", "body": "Clear playbooks for sales, e-commerce and after-sales." },
+      { "title": "Influencer Network", "body": "Strategic partnerships with top KOCs and KOLs." }
+    ],
+    "partnersEyebrow": "Partners",
+    "partnersTitle": "Brands we grow in Vietnam",
+    "partnersNote": "Logo placeholders below — drop in official artwork when it's ready.",
+    "finalCtaTitle": "Ready to grow in Vietnam?",
+    "finalCtaBody": "Tell us about your brand or your business, and we'll show you how our network can help.",
+    "finalCtaPrimary": "Become an agent",
+    "finalCtaSecondary": "Become a supplier"
+  },
+  "about": {
+    "eyebrow": "About HELICORP",
+    "title": "A steadfast, flexible partner for pet care brands",
+    "intro": "HELICORP (short for Healthy Living Corporation) is a leading name in Vietnam's pet care technology market. We chose pet care as the first chapter of a broader mission: helping people live healthier lives, one household at a time. HELICORP is less a single company than a business mindset — steady, adaptable, and always building toward the next stage of growth.",
+    "stats": [
+      { "value": "80%", "label": "E-commerce market share" },
+      { "value": "15+", "label": "Online stores" },
+      { "value": "45+", "label": "Personnel" }
+    ],
+    "valuesEyebrow": "Core Values",
+    "valuesTitle": "What we hold ourselves to",
+    "values": [
+      { "title": "Integrity", "body": "Transparent, honest reporting. We own our mistakes and work through problems in the open." },
+      { "title": "Professionalism", "body": "High standards and continuous learning, so partners and customers get consistent results." },
+      { "title": "Companionship", "body": "We build relationships on trust, walking alongside partners and employees through both setbacks and wins." },
+      { "title": "Innovation", "body": "We look for better ways to solve problems and stay ahead of a fast-moving market." },
+      { "title": "Dedication", "body": "Full commitment to every project, with the extra effort that exceeds expectations." }
+    ],
+    "visionTitle": "Vision",
+    "visionBody": "To lead the Vietnamese market by pioneering advanced pet care technology, setting the standard other players measure themselves against.",
+    "missionTitle": "Mission",
+    "missionBody": "To deliver technology-driven solutions that improve quality of life and happiness for families and their pets alike.",
+    "strategyTitle": "Strategy",
+    "strategyBody": "HELICORP's strategy mirrors its name: steady and adaptable, like a helicopter — moving deliberately into demanding niche markets and adjusting course quickly, always climbing toward new heights.",
+    "omnichannelTitle": "Omnichannel Distribution System",
+    "omnichannelIntro": "Three channels, one seamless experience for the customer at the other end.",
+    "channelOffline": {
+      "title": "Offline Channel",
+      "body": "Flagship stores — including HELIPET Dinh Tien Hoang (HCMC) and HELIPET Thuy Khue (Hanoi) — plus shelf presence at major retail partners such as AEON Mall and Lotte Mart."
+    },
+    "channelOnline": {
+      "title": "Online Channel",
+      "body": "15+ official storefronts across Vietnam's largest marketplaces, including Shopee, TikTok Shop and Lazada."
+    },
+    "channelB2B": {
+      "title": "B2B Partner Channel",
+      "body": "A dealer network of 10+ points of sale, concentrated around petshops and cat cafés that share our target customer."
+    },
+    "facilitiesTitle": "Facilities & Operations",
+    "facilitiesIntro": "Physical infrastructure behind the brand: offices, warehousing and retail space across Ho Chi Minh City and Hanoi, run against four operating pillars.",
+    "facilitiesPillars": [
+      { "title": "Automated Operations", "body": "Process automation across warehousing and fulfillment." },
+      { "title": "Market Leadership", "body": "Category-leading share in smart pet care." },
+      { "title": "Customer Experience", "body": "Service standards built for repeat trust." },
+      { "title": "Brand Protection", "body": "Safeguarding partner brands at every touchpoint." }
+    ],
+    "galleryNote": "Facility photography placeholder — add real images from offices, warehouses and showrooms."
+  },
+  "history": {
+    "eyebrow": "Development History",
+    "title": "How we got here",
+    "intro": "From a first conversation with a single brand to a nationwide distribution network — the milestones that shaped HELICORP.",
+    "milestones": [
+      {
+        "year": "2021",
+        "title": "The Beginning",
+        "items": ["Opened negotiations with PETKIT on developing the brand in Vietnam."]
+      },
+      {
+        "year": "2022",
+        "title": "Foundation & Establishment",
+        "items": [
+          "Reached agreement to develop the PETKIT brand in Vietnam.",
+          "HeLiPet, HeLiCorp and Max Clean established (June 24, 2022)."
+        ]
+      },
+      {
+        "year": "2023",
+        "title": "Strategic Partnerships & Retail Expansion",
+        "items": [
+          "Deepened cooperation with PETKIT for continued development in Vietnam.",
+          "Signed an exclusive partnership with Petree under the HeLiPet brand.",
+          "HeLiCorp products launched on shelves at AEON."
+        ]
+      },
+      {
+        "year": "2024",
+        "title": "Major Growth & Diversification",
+        "items": [
+          "Signed an exclusive distribution partnership for Dr.Vet products.",
+          "Reached an exclusive agreement with Neakasa in Vietnam.",
+          "Opened conversations with partners in the Cambodian market.",
+          "HeLiCorp products launched on shelves at LotteMart.",
+          "Established a branch office in Hanoi."
+        ]
+      },
+      {
+        "year": "2025",
+        "title": "Exclusive Product Innovation",
+        "items": [
+          "Partnered exclusively with Petree to develop the HELIPET OPEN TOP next-generation litter box.",
+          "Opened the first HeLiPet showroom in District 1, HCMC — the first store in our high-tech pet product retail chain."
+        ]
+      }
+    ]
+  },
+  "culture": {
+    "eyebrow": "Corporate Culture",
+    "title": "What makes HELICORP different",
+    "intro": "A working culture built over years, around a highly committed team and a shared set of habits.",
+    "pillarsEyebrow": "The Core Philosophy",
+    "pillars": [
+      { "title": "Growth & Passion", "body": "Every day is a chance to learn, create and work with real enthusiasm — outstanding individuals building something extraordinary together." },
+      { "title": "Skill Up", "body": "Ongoing investment in technical skill, with a learning culture built around people who care about pets and about doing better work." },
+      { "title": "Team Engagement", "body": "A shared journey of growth, reinforced by regular team building and knowledge-sharing events." },
+      { "title": "Talent Pipeline", "body": "Proactively building a strong talent pool — discovering, attracting and training people with an entrepreneurial mindset." }
+    ],
+    "workingEnvTitle": "Working Environment",
+    "workingEnvBody": "A modern, welcoming workplace with the amenities and green space to make it somewhere people are glad to come back to — dynamic, open and friendly by design.",
+    "trainingTitle": "Training & Development",
+    "trainingBody": "People are the biggest lever on the company's growth, so HELICORP runs internal training programs and supports employees taking outside courses to keep skills current.",
+    "galleryNote": "Team & workplace photography placeholder."
+  },
+  "brands": {
+    "eyebrow": "Brand List",
+    "title": "Brands we build and distribute",
+    "intro": "A portfolio of exclusive international distribution deals alongside brands we've built ourselves.",
+    "partnersTitle": "International brands we distribute",
+    "partners": [
+      { "name": "PETKIT", "body": "Smart pet technology — HELICORP's flagship distribution partnership." },
+      { "name": "Dr.VET", "body": "Specialized pet health and nutrition." },
+      { "name": "PETREE", "body": "Exclusive product development partner, including the HELIPET OPEN TOP litter box." },
+      { "name": "NEAKASA", "body": "Smart cleaning technology for pet households." }
+    ],
+    "inhouseTitle": "Our in-house brands",
+    "inhouse": [
+      { "name": "HELIPET", "body": "HELICORP's own pet product and retail brand, including flagship showrooms in HCMC and Hanoi." },
+      { "name": "Max Clean", "body": "In-house cleaning and care products." }
+    ],
+    "ctaAgentTitle": "Looking to sell these brands?",
+    "ctaAgentBody": "Join our agent network and bring these products to your customers.",
+    "ctaSupplierTitle": "Have a brand of your own?",
+    "ctaSupplierBody": "Partner with us as a supplier and let our distribution network take it to market."
+  },
+  "forAgents": {
+    "eyebrow": "For Agents",
+    "title": "Become a partner with HELICORP",
+    "intro": "Expand your reach and build value in Vietnam's pet care technology industry alongside its leading distributor. With a proven business model and an extensive distribution network, we're looking for partners to grow the market together.",
+    "whyTitle": "Why partner with HELICORP?",
+    "why": [
+      "Official exclusive distributor for PETKIT, NEAKASA, PETREE and Dr.VET in Vietnam.",
+      "Owner of proprietary brands including HELIPET and Max Clean.",
+      "Took PETKIT to an 80% market share in smart pet care e-commerce."
+    ],
+    "opsTitle": "Professional operations & logistics",
+    "opsBody": "A mature set of processes across sales, e-commerce, after-sales and marketing, backed by import, customs, warehousing and delivery services that get products to customers quickly.",
+    "distributionTitle": "Comprehensive Omnichannel Distribution System",
+    "channelOnlineTitle": "Online Channel",
+    "channelOnlineBody": "15+ official storefronts on Shopee, TikTok Shop and Lazada, plus dedicated e-commerce sites for our brands.",
+    "channelOfflineTitle": "Offline Channel",
+    "channelOfflineBody": "Key account presence at AEON Mall and Lotte Mart, alongside flagship stores for direct product experience.",
+    "channelB2BTitle": "B2B Partner Channel",
+    "channelB2BBody": "10+ points of sale through a strategic dealer network, focused on petshops and cat cafés.",
+    "mapEyebrow": "Operational Excellence",
+    "mapTitle": "One network, nationwide",
+    "mapBody": "A distribution footprint spanning all 34 provinces and cities in Vietnam, anchored by hubs in Ho Chi Minh City and Hanoi.",
+    "excellenceTitle": "Operational Excellence & Superior After-Sales",
+    "excellenceItems": [
+      "A service strategy covering pre-sale, sale and post-sale, refined against best-in-class retail models.",
+      "Clear, consistent processes across sales, e-commerce, after-sales and marketing."
+    ],
+    "ctaEyebrow": "Take Off With HELICORP",
+    "ctaTitle": "Ready to be part of a fast-growing ecosystem?",
+    "ctaBody": "Connect with us to explore partnership opportunities and build sustainable success in Vietnam's pet care technology industry, together.",
+    "ctaButton": "Take Off"
+  },
+  "forSuppliers": {
+    "eyebrow": "For Suppliers",
+    "title": "Become a supplier for HELICORP",
+    "intro": "We're looking for reputable brands to build a sustainable future together, bringing new pet care technology to Vietnam. Over a decade of category leadership backs our commitment to long-term partnership.",
+    "sections": [
+      {
+        "title": "Optimizing Smart Supply Chains",
+        "body": "Distribution services built on a proven omnichannel system, with transport, storage and product insurance handled for you, adaptable to each brand's go-to-market strategy."
+      },
+      {
+        "title": "Market Expansion & Superior Access",
+        "body": "Official exclusive distribution for PETKIT, NEAKASA, PETREE and Dr.VET, plus in-house brands HELIPET and Max Clean — the same playbook that took PETKIT to an 80% e-commerce share, now available to your brand across online, offline and B2B channels."
+      },
+      {
+        "title": "Effective Business Framework",
+        "body": "Flexible commercial models tailored to your product portfolio and channel mix, built to maximize growth and efficiency."
+      },
+      {
+        "title": "Collaborative Development & Quality Enhancement",
+        "body": "Shared knowledge and technology to help raise product and service quality, with regular training on production skills, quality management and technical standards."
+      },
+      {
+        "title": "Strategic & Long-Term Partnership",
+        "body": "A professional, established partner in pet care technology, working toward sustainable success and shaping where the industry goes next."
+      }
+    ],
+    "logisticsTitle": "Comprehensive Logistics Services",
+    "logistics": [
+      { "title": "Strategic Import & Export", "body": "Customs clearance, conformity, delivery and import licensing handled end to end." },
+      { "title": "Modern Warehouse Management", "body": "Safe, professional storage and inventory management." },
+      { "title": "Flexible & Efficient Delivery", "body": "Nationwide delivery coordinated with reputable domestic and international carriers." },
+      { "title": "Service & Support Network", "body": "Authorized warranty services — exchange, repair, on-site service, installation and maintenance." }
+    ],
+    "stats": [
+      { "value": "1000+", "label": "Projects" },
+      { "value": "400+", "label": "Products" },
+      { "value": "70+", "label": "Operations" },
+      { "value": "20+", "label": "Chain of stores" }
+    ],
+    "ctaEyebrow": "Ready to Soar with HELICORP?",
+    "ctaTitle": "Bring your product to Vietnam's pet care market",
+    "ctaBody": "Become part of a pioneering supplier network and put your products in front of Vietnamese pet owners, together with HELICORP.",
+    "ctaButton": "Ready to Soar"
+  },
+  "careers": {
+    "eyebrow": "Careers",
+    "title": "Build your career at HELICORP",
+    "intro": "Growth & Passion isn't just a slogan here — it's how the team actually operates. If that sounds like your kind of place, take a look at what's open.",
+    "openRolesTitle": "Open positions",
+    "location": "Location",
+    "experience": "Experience",
+    "noExperienceRequired": "No experience required",
+    "generalCtaTitle": "Don't see the right fit?",
+    "generalCtaBody": "We're growing quickly and always glad to hear from driven people. Send your CV and tell us where you'd add value.",
+    "generalCtaButton": "Send your CV"
+  },
+  "news": {
+    "eyebrow": "News",
+    "title": "What's happening at HELICORP",
+    "intro": "Updates on partnerships, products and the team.",
+    "sampleBadge": "Sample content"
+  },
+  "contactAgent": {
+    "eyebrow": "Contact",
+    "title": "Apply to become an agent",
+    "intro": "Leave your details below and our team will get back to you as soon as possible.",
+    "infoTitle": "HELICORP contact details",
+    "sideNoteTitle": "Become a B2B Partner",
+    "sideNoteBody": "HELICORP is actively looking for strategic partners to expand our ecosystem and strengthen our position in smart pet technology. Petshops, cat cafés and other dealers are welcome to bring PETKIT and our other brands to your customer base."
+  },
+  "contactSupplier": {
+    "eyebrow": "Contact",
+    "title": "Apply to become a supplier",
+    "intro": "Tell us about your brand and product, and our team will follow up shortly.",
+    "infoTitle": "Supplier & Innovation Partnership",
+    "sideNoteTitle": "Let's build the next category leader",
+    "sideNoteBody": "If you have a pet care product ready for the Vietnamese market — or an idea for one — we'd like to hear about it. Our team evaluates fit across distribution, logistics and brand strategy before we talk terms."
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist, or may have moved.",
+    "cta": "Back to home"
+  }
+}

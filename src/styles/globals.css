@@ -1,0 +1,704 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+/* ==========================================================================
+   HELICORP DESIGN TOKENS
+   Source: DESIGN.md / SKILL.md (auto-extracted from helicorp.vn), later
+   overridden to a strict black/white/gray palette per direct request.
+
+   The raw extraction has a few collisions and inconsistencies, since it was
+   scraped from computed styles rather than authored as a clean scale. Each
+   token below keeps the ORIGINAL name and relative lightness position from
+   that extraction (so downstream component code never had to change), but
+   every hue has been desaturated to grayscale for the black & white theme.
+   Short version of the original resolution reasoning, still relevant to
+   which tokens map to which shade of gray:
+
+   1. `--primary-l-2/-3/-4` are labelled "Text Primary" but are neutral grays,
+      not tints of `--primary`. Treated as a separate ink/neutral ramp;
+      `color-1` (originally #363636) slots in as `--color-ink`, `color-11`
+      as a near-duplicate of `-l-3`.
+   2. Two different hexes were both originally named `--secondary`. The one
+      that fit a 7-step ramp numerically became the `--color-secondary-*`
+      scale; the odd one out became the standalone `--color-coral` (now
+      used for error/alert emphasis via icon + weight, not hue).
+   3. Two hexes were both originally named `--secondary-2` -- kept as a
+      small 2-step ramp: `--color-gold` (mid gray) + `--color-cream`
+      (light tint, used for alternating section backgrounds).
+   4. `--text-inactive` is a near-duplicate of `color-11` -- reserved
+      strictly for disabled states, never body copy.
+   ========================================================================== */
+
+@theme {
+  /* ---- Color: black & white theme ----
+     Per updated direction, the site's primary palette is now strictly
+     black/white/gray. Rather than rip out every token reference across the
+     codebase, each original token keeps its NAME and relative lightness
+     position but is desaturated to grayscale -- so `bg-cream/30` still
+     reads as "a faint tint for alternating section backgrounds" and
+     `border-l-brand-orange` still reads as "the accent emphasis stripe",
+     just without hue. This keeps every component file below unchanged
+     while honoring the new palette everywhere at once. */
+  --color-bg: #ffffff;
+
+  --color-primary: #000000; /* was brand blue -- links, focus, primary actions */
+  --color-ink: #0a0a0a; /* headings / high-emphasis body text */
+  --color-primary-l-2: #696a6d; /* body text (secondary emphasis) */
+  --color-primary-l-3: #97989b; /* muted text, placeholders */
+  --color-11: #a0a0a0; /* near-duplicate of l-3, kept for fidelity */
+  --color-primary-l-4: #cbcccd; /* borders, dividers, disabled surfaces */
+  --color-text-inactive: #aaaaaa; /* disabled text ONLY -- fails AA for body */
+
+  --color-secondary-d-3: #0d0d0d;
+  --color-secondary-d-2: #141414;
+  --color-secondary-d-1: #1a1a1a;
+  --color-secondary: #333333; /* ramp base */
+  --color-secondary-l-1: #4d4d4d;
+  --color-secondary-l-2: #666666;
+  --color-secondary-l-3: #999999;
+  --color-secondary-l-4: #e0e0e0;
+  --color-brand-orange: #1a1a1a; /* accent role -- primary CTAs, emphasis */
+
+  /* Errors/alerts no longer rely on a red hue -- paired icon + bold weight
+     carries the "error" signal instead, which is also more accessible than
+     color alone ever was. */
+  --color-coral: #1a1a1a;
+  --color-gold: #808080;
+  --color-cream: #f5f5f5; /* light section-background tint */
+
+  /* ---- Typography ---- */
+  /* Montserrat is the real brand face. "Times New Roman" is present in the
+     extracted stack too -- most likely a second element's computed style
+     picked up by the scraper rather than an intentional serif fallback for
+     a geometric sans, but it's kept per the literal token rather than
+     silently dropped. Flagging it here for design sign-off. */
+  --font-sans:
+    'Montserrat', 'Times New Roman', -apple-system, BlinkMacSystemFont,
+    sans-serif;
+
+  --text-xs: 10px;
+  --text-xs--line-height: 1.5;
+  --text-sm: 15px;
+  --text-sm--line-height: 1.4;
+  --text-base: 18px;
+  --text-base--line-height: 1.6;
+  --text-lg: 20px;
+  --text-lg--line-height: 1.5;
+  --text-xl: 30px;
+  --text-xl--line-height: 1.3;
+  --text-2xl: 37px;
+  --text-2xl--line-height: 1.2;
+  --text-3xl: 60px;
+  --text-3xl--line-height: 1.1;
+
+  /* ---- Spacing ----
+     The scale is intentionally NOT a clean 4px multiple (5, 22, 25, 53...
+     alongside 20, 30, 50). Named keys 1-10 are pinned to the exact
+     extracted values below. The dynamic multiplier itself is intentionally
+     left enabled (not set to `initial`) -- an earlier version of this file
+     disabled it to "enforce no arbitrary spacing", but that also broke
+     every OTHER numeric utility that happens to fall outside 1-10 --
+     w-20, gap-16, py-14, and so on, which have nothing to do with this
+     design-token scale and were silently resolving to no padding/size at
+     all rather than erroring, which is exactly the bug behind the
+     ForSuppliers/ForAgents/Home CTA text crowding their container edges.
+     Named keys 1-10 still guarantee token fidelity wherever they're used;
+     everything else now degrades to a sensible default instead of to
+     nothing. */
+  --spacing-1: 5px;
+  --spacing-2: 10px;
+  --spacing-3: 12px;
+  --spacing-4: 20px;
+  --spacing-5: 22px;
+  --spacing-6: 25px;
+  --spacing-7: 30px;
+  --spacing-8: 50px;
+  --spacing-9: 53px;
+  --spacing-10: 60px;
+
+  /* ---- Radius ----
+     Named distinctly from Tailwind's own rounded-sm/md/etc so there's no
+     chance of reaching for a default step by accident -- only these two
+     values are approved anywhere in the product. */
+  --radius-token-sm: 0 0 8px 0;
+  --radius-token-pill: 100px;
+
+  /* ---- Motion ----
+     duration-base was logged as both 0.2s and 0.4s across different
+     properties on the source site; 0.3s is the midpoint. */
+  --duration-fast: 0.1s;
+  --duration-base: 0.3s;
+  --duration-slow: 0.6s;
+  --ease-out-soft: cubic-bezier(0, 0, 0.2, 1);
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  * {
+    @apply border-primary-l-4;
+  }
+
+  html {
+    scroll-behavior: auto; /* Lenis owns smoothing; native smooth-behavior would fight it */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans text-base antialiased;
+    font-feature-settings: 'kern' 1;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-bg);
+  }
+
+  /* Visible, on-brand focus ring for every interactive element -- required
+     by the design system's a11y rules, and never suppressed. */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-ink font-semibold;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  button {
+    font-family: inherit;
+  }
+
+  /* Thin, on-brand scrollbar (progressive enhancement, Webkit + Firefox) */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary-l-4) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary-l-4);
+    border-radius: 100px;
+    border: 2px solid var(--color-bg);
+  }
+
+  /* Respect reduced-motion at the CSS level too, not just in JS */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Ported from button.html: a small blurred circle that grows into a soft
+     rounded glow behind the button's content on hover. Original used a
+     fixed purple; here the color comes from --btn-blob-color so every
+     variant (dark-on-light, light-on-dark, outlined) can supply its own
+     without duplicating the animation logic. */
+  .btn-blob {
+    --btn-blob-color: #000000;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .btn-blob::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: var(--btn-blob-color);
+    filter: blur(5px);
+    opacity: 0.35;
+    z-index: -1;
+    border-radius: 50%;
+    transition:
+      width 0.7s ease-out,
+      height 0.7s ease-out,
+      opacity 0.3s ease-out,
+      border-radius 0.5s ease-out;
+  }
+
+  .btn-blob:hover::before {
+    border-radius: 40%;
+    width: 220%;
+    height: 220%;
+    opacity: 0.16;
+  }
+
+  .btn-blob:active::before {
+    opacity: 0.28;
+    transition-duration: 0.15s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn-blob::before {
+      transition: none;
+    }
+  }
+
+  /* Ported from stack_card.html for the Core Values section. Offset
+     increased from the source's 10px to 26px per request ("more breathing
+     room between the cards") -- everything else (hover/active spread
+     multipliers, timing) carries over unchanged. Adapted to grayscale and
+     to real DOM label elements instead of a ::after/content(var()) trick,
+     so labels are ordinary accessible text. */
+  .stack-card {
+    --w: 260px;
+    --h: 300px;
+    --step: 20px;
+    --offset: 26px; /* was 10px in the source */
+    --hover-mult: 2;
+    --active-mult: 4;
+
+    position: relative;
+    width: var(--w);
+    height: var(--h);
+    border-radius: 1rem;
+    background: rgba(20, 20, 20, 0.85);
+    transform: rotateX(-15deg) rotateY(-35deg);
+    perspective: 600px;
+    box-shadow:
+      rgba(0, 0, 0, 0.2) 4px -4px 18px,
+      0rem 5rem 25px 10px rgba(0, 0, 0, 0.2);
+    border: dashed 2px rgba(150, 150, 150, 0.3);
+    transition: 0.6s ease-in-out;
+    user-select: none;
+  }
+
+  .stack-card:hover {
+    transform: translateY(-15px) translateX(15px) rotateX(-15deg) rotateY(-35deg);
+    background: rgba(30, 30, 30, 0.85);
+    box-shadow:
+      rgba(0, 0, 0, 0.2) 4px -4px 18px,
+      -1rem 5rem 25px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .stack-layer {
+    width: calc(var(--w) - (var(--i) * var(--step)));
+    height: calc(var(--h) - (var(--i) * var(--step)));
+    transform: translateY(calc(var(--i) * var(--offset)))
+      translateX(calc(var(--i) * var(--offset) * -1));
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 4px -4px 12px;
+    border: solid 1px rgba(150, 150, 150, 0.3);
+    background: rgba(240, 240, 240, calc(0.9 - (var(--i) * 0.08)));
+    transition: 0.4s cubic-bezier(0.87, 0, 0.13, 1);
+    transition-delay: 0.05s;
+    display: flex;
+    align-items: flex-end;
+    padding: 14px;
+  }
+
+  .stack-card:hover .stack-layer {
+    transform: translateY(calc(var(--i) * var(--offset) * var(--hover-mult)))
+      translateX(calc(var(--i) * var(--offset) * var(--hover-mult) * -1));
+  }
+
+  .stack-card:active .stack-layer {
+    transform: translateY(calc(var(--i) * var(--offset) * var(--active-mult)))
+      translateX(calc(var(--i) * var(--offset) * var(--active-mult) * -1));
+  }
+
+  .stack-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #1a1a1a;
+    opacity: 0.85;
+    transition: opacity 0.3s;
+  }
+
+  .stack-layer:hover .stack-label {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stack-card,
+    .stack-card:hover,
+    .stack-layer,
+    .stack-card:hover .stack-layer {
+      transition: none;
+    }
+  }
+
+  /* Ported from brand.html for the partner/brand showcase cards. Original
+     used a tan/orange palette with a rotating rainbow conic-gradient
+     overlay; both desaturated to grayscale here. */
+  .brand-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 78px;
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    outline: 3px solid #1a1a1a;
+    box-shadow: 6px 6px 0 #000000;
+    transition: all 0.2s ease-out;
+    padding: 0 14px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .brand-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg at 50% 50%, #000, #999, #000);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    z-index: 1;
+    animation: rotate 4s linear infinite;
+  }
+
+  .brand-card:hover::before {
+    opacity: 0.12;
+  }
+
+  .brand-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0 #000000;
+  }
+
+  .brand-card:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0 #000000;
+    background-color: #ffffff;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .brand-card-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 15px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.2s ease-out;
+  }
+
+  .brand-card:hover .brand-card-mark {
+    transform: rotate(-10deg) scale(1.08);
+  }
+
+  .brand-card:active .brand-card-mark {
+    transform: rotate(10deg) scale(0.92);
+  }
+
+  .brand-card-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    position: relative;
+    z-index: 2;
+    min-width: 0;
+  }
+
+  .brand-card-text span:first-child {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-card-text span:last-child {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #696a6d;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .brand-card,
+    .brand-card::before,
+    .brand-card-mark {
+      transition: none;
+      animation: none;
+    }
+  }
+  /* Ported from contact_apply.html for the contact-page info sidebars --
+     a pure-CSS (no JS) mouse-tracking tilt: an invisible 5x5 grid of
+     tracker cells sits over the card, each triggering a different
+     rotateX/rotateY via a sibling selector when hovered. Adapted from the
+     source's purple/pink/gold gradient to a grayscale one. */
+  .tilt-container {
+    position: relative;
+    width: 100%;
+    transition: 200ms;
+  }
+
+  .tilt-canvas {
+    perspective: 900px;
+    inset: 0;
+    z-index: 20;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .tilt-tr {
+    position: relative;
+    z-index: 20;
+  }
+
+  .tilt-tr:hover {
+    cursor: pointer;
+  }
+
+  .tilt-card {
+    position: relative;
+    z-index: 1;
+    border-radius: 1.25rem;
+    transition: 600ms;
+    background: linear-gradient(145deg, #1a1a1a 0%, #000000 100%);
+    overflow: hidden;
+  }
+
+  .tilt-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, #333333 0%, #000000 100%);
+    filter: blur(2rem);
+    opacity: 0;
+    z-index: -1;
+    transition: 200ms;
+  }
+
+  .tilt-container:hover .tilt-card::before {
+    opacity: 40%;
+  }
+
+  .tilt-tr:hover ~ .tilt-card {
+    transition: 300ms;
+    filter: brightness(1.08);
+  }
+
+  .tilt-tr-1:hover ~ .tilt-card {
+    transform: rotateX(20deg) rotateY(-10deg);
+  }
+  .tilt-tr-2:hover ~ .tilt-card {
+    transform: rotateX(20deg) rotateY(-5deg);
+  }
+  .tilt-tr-3:hover ~ .tilt-card {
+    transform: rotateX(20deg) rotateY(0deg);
+  }
+  .tilt-tr-4:hover ~ .tilt-card {
+    transform: rotateX(20deg) rotateY(5deg);
+  }
+  .tilt-tr-5:hover ~ .tilt-card {
+    transform: rotateX(20deg) rotateY(10deg);
+  }
+  .tilt-tr-6:hover ~ .tilt-card {
+    transform: rotateX(10deg) rotateY(-10deg);
+  }
+  .tilt-tr-7:hover ~ .tilt-card {
+    transform: rotateX(10deg) rotateY(-5deg);
+  }
+  .tilt-tr-8:hover ~ .tilt-card {
+    transform: rotateX(10deg) rotateY(0deg);
+  }
+  .tilt-tr-9:hover ~ .tilt-card {
+    transform: rotateX(10deg) rotateY(5deg);
+  }
+  .tilt-tr-10:hover ~ .tilt-card {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+  .tilt-tr-11:hover ~ .tilt-card {
+    transform: rotateX(0deg) rotateY(-10deg);
+  }
+  .tilt-tr-12:hover ~ .tilt-card {
+    transform: rotateX(0deg) rotateY(-5deg);
+  }
+  .tilt-tr-13:hover ~ .tilt-card {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  .tilt-tr-14:hover ~ .tilt-card {
+    transform: rotateX(0deg) rotateY(5deg);
+  }
+  .tilt-tr-15:hover ~ .tilt-card {
+    transform: rotateX(0deg) rotateY(10deg);
+  }
+  .tilt-tr-16:hover ~ .tilt-card {
+    transform: rotateX(-10deg) rotateY(-10deg);
+  }
+  .tilt-tr-17:hover ~ .tilt-card {
+    transform: rotateX(-10deg) rotateY(-5deg);
+  }
+  .tilt-tr-18:hover ~ .tilt-card {
+    transform: rotateX(-10deg) rotateY(0deg);
+  }
+  .tilt-tr-19:hover ~ .tilt-card {
+    transform: rotateX(-10deg) rotateY(5deg);
+  }
+  .tilt-tr-20:hover ~ .tilt-card {
+    transform: rotateX(-10deg) rotateY(10deg);
+  }
+  .tilt-tr-21:hover ~ .tilt-card {
+    transform: rotateX(-20deg) rotateY(-10deg);
+  }
+  .tilt-tr-22:hover ~ .tilt-card {
+    transform: rotateX(-20deg) rotateY(-5deg);
+  }
+  .tilt-tr-23:hover ~ .tilt-card {
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
+  .tilt-tr-24:hover ~ .tilt-card {
+    transform: rotateX(-20deg) rotateY(5deg);
+  }
+  .tilt-tr-25:hover ~ .tilt-card {
+    transform: rotateX(-20deg) rotateY(10deg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tilt-card,
+    .tilt-tr:hover ~ .tilt-card {
+      transition: none;
+      transform: none !important;
+    }
+  }
+
+  /* Ported from contact_icon.html for the footer social icons -- each
+     icon tilts into a 3D "pressed" perspective on hover. Per-brand hover
+     shadow colors from the source are unified to a single grayscale
+     shadow here. */
+  .social-icon-slot {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.68, 0.85, 0.265, 1.85);
+    border-radius: 8px;
+    box-shadow:
+      inset 1px 1px 2px rgba(255, 255, 255, 0.08),
+      0 0 5px rgba(255, 255, 255, 0.05);
+  }
+
+  .social-icon-slot:hover {
+    background-color: #000000;
+    transform: perspective(180px) rotateX(55deg) translateY(2px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.35);
+  }
+
+  .social-icon-button {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.68, -0.85, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+  }
+
+  .social-icon-slot:hover .social-icon-button {
+    transform: translate3d(0px, 16px, 24px) perspective(80px) rotateX(-55deg) translateY(2px)
+      translateZ(8px);
+    color: #ffffff;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .social-icon-slot,
+    .social-icon-button,
+    .social-icon-slot:hover .social-icon-button {
+      transition: none;
+      transform: none;
+    }
+  }
+}
+
+@layer utilities {
+  @keyframes blob-drift {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(4%, -6%) scale(1.08);
+    }
+    66% {
+      transform: translate(-3%, 4%) scale(0.95);
+    }
+  }
+
+  .animate-blob-drift {
+    animation: blob-drift 18s ease-in-out infinite;
+  }
+
+  .animate-blob-drift-slow {
+    animation: blob-drift 24s ease-in-out infinite reverse;
+  }
+
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100;
+    @apply bg-primary text-bg px-4 py-2 rounded-token-sm text-sm font-medium;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
